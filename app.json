@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "counter",
-    "slug": "counter",
+    "name": "rn_counter",
+    "slug": "rn_counter",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
