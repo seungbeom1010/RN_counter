@@ -5,17 +5,17 @@ import { StyleSheet, Text, View, Button, Alert} from 'react-native';
 
 export default function App() {
 
-  const [cnt, setCnt] = useState(0);
+  const [cnt, setCnt] = useState(0); 
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Number Counter</Text>
+      <Text style={styles.title}>Number Counter</Text> {/* title */}
 
-      <Text style={styles.textTitle}>Current Number</Text>
+      <Text style={styles.textTitle}>Current Number</Text> {/* subtitle */}
 
-      <Text style={styles.cnt}>{cnt}</Text>
+      <Text style={styles.cnt}>{cnt}</Text> {/* current number */}
 
-      <View style={styles.buttonBox}>
+      <View style={styles.buttonBox}> {/* counting logic */}
         <View style={styles.button1}>
           <Button color='white' stlye={styles.button1} title='더하기' onPress={ () => setCnt(cnt + 1) }/>
         </View>
@@ -24,7 +24,7 @@ export default function App() {
         </View>
       </View>
       
-      <View style={styles.check}>
+      <View style={styles.check}> {/* alert */}
         <Button color='white' title='Check' onPress={ () => Alert.alert('현재 숫자는 ' + cnt + ' 입니다.') }/>
       </View>
       
